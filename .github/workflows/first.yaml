@@ -1,0 +1,11 @@
+name: First action
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest #or ubuntu-22.04 or windows-latest or windows-2022 or macos-latest or macos-12
+        
+        steps:
+            - name: Test steps
+              run: echo "Hello World"
